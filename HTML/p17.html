@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="range"] {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>input type range</h1>
+
+    <form action="">
+        <label for="">Weight</label>
+        <input type="range" name="wgt" id="wgt" min="0" max="100" value="0" step="0.1">
+        <hr>
+    </form>
+            <h1 id="output"></h1>
+
+    <script>
+        let wgt = document.getElementById("wgt")
+        let out = document.getElementById("output")
+
+        wgt.onchange = function() {
+            out.innerText = wgt.value + " kgs";
+        }
+    </script>
+</body>
+</html>

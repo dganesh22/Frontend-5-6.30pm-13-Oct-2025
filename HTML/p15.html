@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>forms</h1>
+    <form action="" autocomplete="" enctype="" method="">
+        <fieldset>
+            <legend>Login Form</legend>
+        
+         <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" value="admin" readonly placeholder="Your name.." required>
+
+        <br><br>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder="Your last Name.." required>
+
+        <br><br>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+        </fieldset>
+    </form>
+
+    <!-- 
+        form tag
+            fieldset, legend - optional tags
+            label - title for the input
+            input - 15+
+                        text,number,email,password,radio,checkbox,date,datetime,datetime-local,time,month,week,file,search,color,tel(deprecated),range,submit,reset,hidden,image,url
+            select - dropdown
+            textarea - multiline text input
+
+        attributes
+    action => server path / server file path/name / url address
+        method => get  => data will be visible
+                  post  -> data will be hidden
+        enctype => urlencoded is default encoding format 
+                    multipart/form-data => if form includes input type file
+        autocomplete => on (autofill willbe on) /off (autofill willbe off)
+    -->
+</body>
+</html>
