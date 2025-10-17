@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        progress {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>progress tag</h1>
+
+    <progress id="pro" min="0" max="100" value="0"></progress>
+
+    <h1 id="out"></h1>
+    <button onclick="addValue()">Click me</button>
+
+    <script>
+        let pro = document.getElementById("pro")
+        let out = document.getElementById("out")
+        let x = 0;
+
+        function addValue() {
+                x+= 1;
+            pro.value = x;
+            out.innerText = x + "%";
+            
+        setInterval(addValue,1000)
+        }
+
+    </script>
+</body>
+</html>
