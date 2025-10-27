@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li[class~="btn"] {
+            padding: 8px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1> [attr~=value] </h1>
+    <p>style applicable only those values present at the individual position, not combine with any other </p>
+    <ul>
+        <li class="btn-link">Item-1</li>
+        <li class="add btn">Item-2</li>
+        <li class="sub-btn">Item-3</li>
+        <li class="btn sm">Item-4</li>
+        <li class="lg-btn">Item-5</li>
+        <li class="btn block">Item-6</li>
+    </ul>
+</body>
+</html>

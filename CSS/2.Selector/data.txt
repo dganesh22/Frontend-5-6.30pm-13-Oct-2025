@@ -15,5 +15,5 @@ types of selectors
 6. Attribute Selectors
 
 7. Pseudo Selectors
-    a. Pseudo class
-    b. Pseudo element
+    a. Pseudo class (:)
+    b. Pseudo element (::)
