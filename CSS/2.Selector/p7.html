@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container-1,
+        .container-2 {
+            height: 80vh;
+            width: 100%;
+            background-color: #ccc;
+        }
+
+        /* decendant - all childs */
+        .container-1 .card {
+            width: 80%;
+            height: 80%;
+            border: 2px solid #222;
+            padding: 10px;
+            margin: 1rem;
+        }
+
+        /* child  > */
+         .container-2 > .card {
+            width: 80%;
+            height: 80%;
+            border: 2px solid #222;
+            padding: 10px;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Decendant and Child combinator</h1>
+
+    <section class="container-1">
+        <div class="card">
+            <h3>First Child</h3>
+            <div class="card">
+                <h3>Grand Child</h3>
+                <div class="card">
+                    <h3>Great Grand Child</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="container-2">
+        <div class="card">
+            <h3>First Child</h3>
+            <div class="card">
+                <h3>Grand Child</h3>
+                <div class="card">
+                    <h3>Great Grand Child</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

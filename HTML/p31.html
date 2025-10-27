@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dialog tag</h1>
+
+    <button id="showBtn">Show Dialog</button>
+
+    <dialog id="box">
+        <h3>Delete Dialog</h3>
+        <h5>Are you sure to delete the user data?</h5>
+        <div>
+            <button id="clsBtn">Cancel</button>
+            <button>Ok</button>
+        </div>
+    </dialog>
+
+    <script>
+        var shBtn = document.getElementById("showBtn")
+        var clBtn = document.getElementById("clsBtn")
+        var box = document.getElementById("box")
+
+        shBtn.onclick = function() {
+            box.show()
+        }
+
+        clBtn.onclick = function() {
+            box.close()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+types of selectors
+
+1. Universal Selector (*)
+2. Basic Selectors 
+    a. HTML Tag selector
+    b. Class Selector (.classname)
+    c. ID selector (#idname)
+3. Group Selector (,)
+4. Compound Selector (only with class)
+5. Combinators
+    a. Decendant (space)
+    b. Child (>)
+    c. General Sibling (~)
+    d. Adjacent Sibling (+)
+6. Attribute Selectors
+
+7. Pseudo Selectors
+    a. Pseudo class
+    b. Pseudo element
