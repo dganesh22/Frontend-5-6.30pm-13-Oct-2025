@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        p:first-child,
+        li:first-child {
+            color:orange;
+            font-size: 2rem;
+        }
+
+        p:last-child,
+        li:last-child {
+            color: deepskyblue;
+            font-size: 2rem;
+        }
+
+        p:nth-child(4),
+        li:nth-child(3) {
+            color: orchid;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>:first-child , :last-child and :nth-child(pos)</h1>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <div>
+        <p>para-1</p>
+        <p>para-2</p>
+        <p>para-3</p>
+        <p>para-4</p>
+        <p>para-5</p>
+        <p>para-6</p>
+    </div>
+</body>
+</html>
