@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+        .container{
+            width: 500px;
+            padding: 20px;
+        }
+
+        .b1,.b2,.b3,.b4 {
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            margin: 10px;
+            background-image: url('./panel2.jpeg');
+            border:10px dashed #ccc;
+        }
+
+        h1 { 
+            font-size: 5rem;
+        }
+
+        .b1 { background-clip: border-box;}
+        .b2 { background-clip: padding-box;}
+        .b3 { background-clip: content-box;}
+        .b4 { background-clip: text; color: transparent;}
+    </style>
+</head>
+<body>
+    <h1>background-clip</h1>
+     <section class="container">
+            <div class="b1">
+                <h1>Border-box</h1>
+            </div>
+            <div class="b2">
+                <h1>Padding-box</h1>
+            </div>
+            <div class="b3">
+                <h1>Content-Box</h1>
+            </div>
+            <div class="b4">
+                <h1>Text</h1>
+            </div>
+    </section>
+</body>
+</html>

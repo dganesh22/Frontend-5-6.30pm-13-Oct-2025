@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dialog::backdrop {
+            background-image: linear-gradient(to top right, slateblue,green);
+        }
+    </style>
+</head>
+<body>
+    <h1>::backdrop</h1>
+
+    <button class="btn show">Show Dialog</button>
+
+     <dialog id="alert">
+          <button class="btn cls">Close</button>
+          <div class="content">
+            <h3>Are you sure to logout?</h3>
+            <div class="btn">
+                <button class="btn no">No</button>
+                <button class="btn yes">Yes</button>
+            </div>
+          </div>
+     </dialog>
+<script>
+            let show = document.querySelector(".show");
+            let alert = document.querySelector("#alert");
+            let cls = document.querySelector(".cls");
+
+            show.addEventListener("click", function(){
+                // alert.show(); //only for alert
+               alert.showModal(); /* with backdrop */
+            });
+
+            cls.addEventListener("click", function () {
+                alert.close();
+            });
+     </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+        .container{
+            width: 500px;
+            padding: 20px;
+        }
+
+        .b1,.b2,.b3,.b4 {
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+            margin: 10px;
+            background-image: url('./panel2.jpeg');
+            border:10px dashed #ccc;
+            background-repeat: no-repeat;
+        }
+
+        h1 { 
+            font-size: 4rem;
+        }
+
+        .b1 { background-origin: border-box;}
+        .b2 { background-origin: padding-box;}
+        .b3 { background-origin: content-box;}
+       
+    </style>
+</head>
+<body>
+    <h1>background-origin</h1>
+     <section class="container">
+            <div class="b1">
+                <h1>Border-box</h1>
+            </div>
+            <div class="b2">
+                <h1>Padding-box</h1>
+            </div>
+            <div class="b3">
+                <h1>Content-Box</h1>
+            </div>
+           
+    </section>
+</body>
+</html>
