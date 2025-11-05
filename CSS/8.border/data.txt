@@ -1,0 +1,9 @@
+1. border-block
+2. border-width
+3. border-color
+4. border-style
+5. border-radius
+6. border-collapse
+7. border-image
+8. border-inline
+9. border-left,border-right,border-top, border-bottom
