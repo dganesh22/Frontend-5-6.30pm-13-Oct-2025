@@ -1,0 +1,11 @@
+Transform (2d) and (3d)
+
+        translate(x,y)
+        translateX(x) translateY(y)
+        translateZ(z) 
+        rotate(angle) , rotateY(angle) rotateX(angle) rotateZ(angle)
+        scale(x,y) scaleX(x) scaleY(y) scaleZ(z)
+        skew(x-angle, y-angle) skewX(x-angle) skewY(y-angle)
+        matrix()
+
+    
