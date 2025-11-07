@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+         }
+
+         .container div {
+            height: 100px;
+            width: 200px;
+            margin: 20px;
+         }
+
+         .b1{
+            box-shadow: 10px 3px 14px rgba(255, 2, 35, 0.4); /* x y blur color */
+         }
+
+          .b2 {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+         }
+
+          .b3 {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         }
+
+         h1 {
+            text-shadow: 10px 10px 1px red;
+         }
+         
+    </style>
+</head>
+<body>
+    <h1>box-shadow</h1>
+
+    <section class="container">
+        <div class="b1">block-1</div>
+        <div class="b2">block-2</div>
+        <div class="b3">block-3</div>
+        <div class="b4">block-4</div>
+        <div class="b5">block-5</div>
+    </section>
+</body>
+</html>

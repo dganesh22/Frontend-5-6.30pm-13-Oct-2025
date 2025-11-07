@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 200px;
+            height: 100%;
+            background-color: orangered;
+            color:#fff;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .container:hover .card {
+            opacity: 0.2;
+            filter: blur(2px);
+        }
+
+        .container .card:hover {
+            opacity: 1;
+            filter: blur(0px);
+        }
+    </style>
+</head>
+<body>
+    <h1>filter</h1>
+
+    <section class="container">
+        <div class="card">
+            <h3>card-heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At illo architecto nobis, itaque adipisci, impedit nemo in minus optio, est culpa esse quidem. Maiores sint architecto ut, praesentium nostrum quis?</p>
+        </div>
+        <div class="card">
+            <h3>card-heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At illo architecto nobis, itaque adipisci, impedit nemo in minus optio, est culpa esse quidem. Maiores sint architecto ut, praesentium nostrum quis?</p>
+        </div>
+        <div class="card">
+            <h3>card-heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At illo architecto nobis, itaque adipisci, impedit nemo in minus optio, est culpa esse quidem. Maiores sint architecto ut, praesentium nostrum quis?</p>
+        </div>
+        <div class="card">
+            <h3>card-heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At illo architecto nobis, itaque adipisci, impedit nemo in minus optio, est culpa esse quidem. Maiores sint architecto ut, praesentium nostrum quis?</p>
+        </div>
+        <div class="card">
+            <h3>card-heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At illo architecto nobis, itaque adipisci, impedit nemo in minus optio, est culpa esse quidem. Maiores sint architecto ut, praesentium nostrum quis?</p>
+        </div>
+    </section>
+</body>
+</html>
