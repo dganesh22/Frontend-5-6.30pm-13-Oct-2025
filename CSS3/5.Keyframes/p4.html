@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to top left, deepskyblue,orangered,orange);
+            border-radius: 50%;
+            animation-name: cir-anim;
+            animation-duration: 2s;
+            animation-delay: 0;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .normal {
+            animation-direction: normal;
+        }
+
+        .rev {
+            animation-direction: reverse;
+        }
+
+        .alt {
+            animation-direction: alternate;
+        }
+
+        .alt-rev {
+            animation-direction: alternate-reverse;
+        }
+
+ @keyframes cir-anim {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+     <h1>animation-direction</h1>
+    <h3>Normal Direction</h3>
+    <div class="circle normal"></div>
+
+    <h3>Reverse Direction</h3>
+    <div class="circle rev"></div>
+
+    <h3>Alternate direction</h3>
+    <div class="circle alt"></div>
+
+    <h3>Alternate Reverses</h3>
+    <div class="circle alt-rev"></div>
+</body>
+</html>
