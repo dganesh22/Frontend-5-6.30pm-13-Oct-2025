@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service app</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- menu -->
+    <header class="menu-heading">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                   <i class="fa-brands fa-servicestack"></i> Service App
+                </a>
+
+                <div class="menu">
+                     <a href="pro.html" class="btn outline">
+                        <i class="fa-solid fa-user-plus"></i> 
+                        <span class="txt">Join as a pro</span>
+                     </a>
+                     <!-- <a href="cart.html" class="btn outline">
+                        <i class="fa fa-cart-shopping"></i> Cart
+                     </a> -->
+                     <a href="login.html" class="btn outline">
+                        <i class="fa-regular fa-circle-user"></i> 
+                        <span class="txt">Login</span>
+                     </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- cart section -->
+    <section id="cart">
+        <div class="container">
+             <div class="left-block">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>My Cart</h3>
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <th>Service</th>
+                                <th>Price</th>
+                                <th>Date&Time</th>
+                                <th>Type</th>
+                            </tr>
+                            <tr>
+                                <td>Handyman Services</td>
+                                <td>250.00</td>
+                                <td>5-Dec-2025 09:30 am</td>
+                                <td>Single</td>
+                            </tr>
+                            <tr>
+                                <td>Gardening Services</td>
+                                <td>1999.00</td>
+                                <td>12-Dec-2025 10:30 am</td>
+                                <td>Monthly</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+             </div>
+             
+             <div class="right-block">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Payment Summary</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <strong>Item Total</strong>
+                            <span> &#8377; 2249.00  </span>
+                        </p>
+                        <p>
+                            <strong>CGST</strong>
+                            <span> &#8377; 150.00  </span>
+                        </p>
+                        <p>
+                            <strong>SGST</strong>
+                            <span> &#8377; 150.00  </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Coupons</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="text" name="coupon" id="coupon" class="form-input" placeholder="Enter coupon code here">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Amount</h3>
+                    </div>
+                    <div class="card-body">
+                         <h3>
+                            <strong>Total</strong>
+                            <span> &#8377; 2549.00  </span>
+                        </h3>
+                        <button class="btn checkout">
+                            Checkout <i class="fa-solid fa-check"></i>
+                        </button>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- script -->
+     <script src="./js/app.js"></script>
+</body>
+</html>

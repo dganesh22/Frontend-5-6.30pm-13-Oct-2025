@@ -14,7 +14,7 @@
 <body>
     <h1>progress tag</h1>
 
-    <progress id="pro" min="0" max="100" value="0"></progress>
+    <progress id="pro" min="0" max="100" value="30"></progress>
 
     <h1 id="out"></h1>
     <button onclick="addValue()">Click me</button>
@@ -26,8 +26,12 @@
 
         function addValue() {
                 x+= 1;
-            pro.value = x;
+         if(x === 100) {
+            document.writeln(`<h1>completed</h1>`)
+         } else {
+               pro.value = x;
             out.innerText = x + "%";
+         }
             
         setInterval(addValue,1000)
         }

@@ -1,0 +1,33 @@
+media query related to mobile responsive view of web pages depending on the screen resolution (width x height) in px
+
+
+1. Wearable Devices (Smart Watch)  > 300px
+2. Mobiles  - 350px - 
+3. Tab 
+4. Notebook pc
+5. Laptop
+6. Desktop
+7. 4k Devices (Large Screens)
+
+
+Media query Scale 
+
+mobile-s = 320px
+mobile-m = 375px
+mobile-l = 425px
+
+tab - 768px
+
+Laptop = 1024px
+Laptop-L = 1440px
+
+4K - 2560px
+
+
+Properties of media query
+1. resolution (width x height)
+2. pixel depth
+3. color depth
+4. orientation
+    portrait
+    landscape

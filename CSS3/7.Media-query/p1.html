@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            width: 100%;
+            margin: auto;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .card {
+            text-align: justify;
+            margin: 1rem;
+            box-shadow: 5px 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        @media screen and (max-width:768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .card {
+                background-color: orange;
+            }
+        }
+
+        
+        @media (min-width:769px) and (max-width:1200px) {
+            .container {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .card {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>media query</h1> -->
+    <section class="container">
+        <div class="card">
+            <div class="title">
+                <h4>Product-1</h4>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem unde autem, voluptate quibusdam praesentium, impedit quidem perferendis officia perspiciatis dolorum ratione magni similique, possimus nisi iste velit consequatur corrupti ab!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="title">
+                <h4>Product-2</h4>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem unde autem, voluptate quibusdam praesentium, impedit quidem perferendis officia perspiciatis dolorum ratione magni similique, possimus nisi iste velit consequatur corrupti ab!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="title">
+                <h4>Product-3</h4>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem unde autem, voluptate quibusdam praesentium, impedit quidem perferendis officia perspiciatis dolorum ratione magni similique, possimus nisi iste velit consequatur corrupti ab!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="title">
+                <h4>Product-4</h4>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem unde autem, voluptate quibusdam praesentium, impedit quidem perferendis officia perspiciatis dolorum ratione magni similique, possimus nisi iste velit consequatur corrupti ab!</p>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+</html>

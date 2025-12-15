@@ -12,20 +12,26 @@
         }
 
         h2::before {
-            counter-increment: ch;
+            counter-increment:ch;
             content: counter(ch) ".";
         }
 
-        h2 { counter-reset: tp;}
+        h2 {
+            counter-reset: tp;
+        }
+
         h4::before {
             counter-increment: tp;
             content: counter(ch) "." counter(tp) " ";
-            margin-left: 1rem;
+            padding-left: 1rem;
         }
 
-        h4 {counter-reset: st;}
+        h4 {
+            counter-reset: st;
+        }
+
         p::before {
-             counter-increment: st;
+            counter-increment: st;
             content: counter(ch) "." counter(tp) "." counter(st) " ";
             margin-left: 2rem;
         }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educate</title>
+    <!-- css -->
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./css/media.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- menu -->
+    <header class="heading">
+        <nav class="navbar">
+            <section class="container">
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <span>Educate</span>
+                </a>
+
+              
+                <main class="menu-container">
+                    <div class="menu">
+                        <a href="index.html">
+                        <i class="fa-regular fa-house"></i> Home</a>
+                        <a href="about.html">
+                        <i class="fa-regular fa-user"></i> About</a>
+                        <a href="courses.html">
+                            <i class="fa-solid fa-book-open"></i> Courses</a>
+                        <a href="contact.html">
+                            <i class="fa-regular fa-address-book"></i> Contact</a>
+                    </div>
+                    <button class="btn solid" id="enrollBtn">
+                        Enroll Now <i class="fa-solid fa-check"></i>
+                    </button>
+                      <button class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </main>
+
+            </section>
+        </nav>
+    </header> 
+
+
+    <!-- footer section -->
+    <footer class="foot">
+        <div class="container">
+            <article>
+                 <a href="index.html" class="logo">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <span>Educate</span>
+                </a>
+                <p>Redefining recruitment with predictably accurate processes, providing training and job opportunities</p>
+            </article>
+
+            <article>
+                <h5>Quick links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </article>
+            <article>
+                <h5>Other Links</h5>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Pay Terms</a></li>
+                    <li><a href="#">Placements</a></li>
+                </ul>
+            </article>
+            <article>
+                <h5>Contact</h5>
+                <div>
+                    <h5>Office: <i class="fa-solid fa-map"></i> </h5>
+                    <address>
+                        #123, <br>
+                        2nd cross, <br>
+                        Basaveshwara nagar, <br>
+                        Banglore-560079
+                    </address>
+                    <p class="icon"> <i class="fa-solid fa-phone"></i> 9900225544 </p>
+                    <p class="icon"> <i class="fa-solid fa-envelope"></i> admin@educate.com </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="footer-content">
+            <p>All Rights reserved &copy;<span id="yr"></span> </p>
+        </div>
+    </footer>
+
+    
+    <!-- enroll form -->
+     <dialog id="enrollForm">
+            <div class="container">
+                <div class="title">
+                    <h3>Enrollment Form</h3>
+                </div>
+                <button class="clsbtn" id="cls">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+                <div class="card">
+                    <form method="post" autocomplete="off">
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input type="text" name="name" id="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your email</label>
+                            <input type="email" name="email" id="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Your Mobile</label>
+                            <input type="text" name="mobile" id="mobile" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Choose Course</label>
+                            <select name="course" id="course" class="form-input">
+                                <option value="null">Select course</option>
+                                <optgroup label="FrontEnd Courses">
+                                        <option value="htmlcss">HTML,CSS</option>
+                                        <option value="javascript">JavaScript</option>
+                                        <option value="react">ReactJS</option>
+                                        <option value="angular">AngularJS</option>
+                                        <option value="vue">Vue JS</option>
+                                        <option value="next">Next JS</option>
+                                        <option value="complete">Complete FrontEnd</option>
+                                </optgroup>
+
+                                <optgroup label="Fullstack Courses"> 
+                                    <option value="mern">MERN FullStack</option>
+                                    <option value="java">Java FullStack</option>
+                                    <option value="python">Python FullStack</option>
+                                    <option value="mobile">Mobile FullStack</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+     </dialog>
+
+    <!-- script -->
+     <script src="./js/app.js"></script>
+    
+</body>
+</html>

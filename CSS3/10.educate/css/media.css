@@ -1,0 +1,40 @@
+@media screen and (max-width:990px) {
+
+    .heading .menu {
+        display: none;
+    }
+
+    .heading .menu-btn {
+        display: block;
+    }
+
+    .heading .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30vw;
+        height: 100%;
+        background-color: var(--light);
+        padding-top: 4rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+        .heading .menu.active a {
+            margin-top: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+
+    
+    #certificate .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

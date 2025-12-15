@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service app</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- menu -->
+    <header class="menu-heading">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                   <i class="fa-brands fa-servicestack"></i> Service App
+                </a>
+
+                <div class="menu">
+                     <a href="pro.html" class="btn outline">
+                        <i class="fa-solid fa-user-plus"></i> 
+                        <span class="txt">Join as a pro</span>
+                     </a>
+                     <a href="cart.html" class="btn outline">
+                        <i class="fa fa-cart-shopping"></i> 
+                        <span class="txt">Cart</span>
+                     </a>
+                     <a href="login.html" class="btn outline">
+                        <i class="fa-regular fa-circle-user"></i> 
+                        <span class="txt">Login</span>
+                     </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section id="hero">
+        <main class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Book Reliable Professionals For Your Home</h1>
+                    <div class="form-card">
+                        <div class="form-group">
+                            <select name="location" id="location" class="form-input">
+                                <option value="null">Select Your location</option>
+                                <option value="banglore">Banglore</option>
+                                <option value="mysore">Mysore</option>
+                                <option value="mangaluru">Mangaluru</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="search" name="service" id="service" class="form-input" required placeholder="What service do you need?">
+                            <button class="search">
+                                <i class="fa-solid fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <main class="container service">
+            <div class="card">
+                <i class="fa-solid fa-person-dress"></i>
+                <h3>Salon and Spa Services</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-person-digging"></i>
+                <h3>Handyman Services</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-tv"></i>
+                <h3>Electronics Repair</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-blender-phone"></i>
+                <h3>Appliance Repair</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-broom"></i>
+                <h3>Home Clearning Service</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-snowplow"></i>
+                <h3>Earth Moving Service</h3>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-pagelines"></i>
+                <h3>Gardening Service</h3>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-car-rear"></i>
+                <h3>Vehicle Service</h3>
+            </div>
+        </main>
+
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+    </section>
+
+    <!-- script -->
+     <script src="./js/app.js"></script>
+</body>
+</html>
